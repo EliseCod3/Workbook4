@@ -48,14 +48,20 @@ let courses = [
 
     console.log(cheapCourses);
 
+    console.log("Courses $50 or less");
     for (let index = 0; index < cheapCourses.length; index++) {
         const course = cheapCourses[index];
         console.log(course.Title);
     }
 
+    console.log("");
+    //Courses in classroom 1
+    console.log("Courses in classroom 1");
+
     for (let index = 0; index < courses.length; index++) {
         const course = courses[index];
-        if (course.Location == "") {
+        if (course.Location == "Classroom 1") {
+            console.log(course.Title);
             
         }
     }
@@ -65,6 +71,7 @@ let courses = [
 
 
     //when does the PROG200 course start?
+    console.log("The course starts on:");
     function getCourse(courses, courseId) {
         for (let index = 0; index < courses.length; index++) {
             const course = courses[index];
@@ -77,6 +84,4 @@ let courses = [
     let course = getCourse(courses, "PROG200");
 
     console.log(course.StartDate);
-
-    Z
 
