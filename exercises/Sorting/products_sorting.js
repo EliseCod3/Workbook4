@@ -12,3 +12,18 @@ products = [
     // TODO: fill the array with 10 candies of various
     // price ranges
     ];
+
+    products.sort(function(a, b) {
+        if (a.product < b.product) return -1;
+        else if (a.product == b.product) return 0;
+        else return 1;
+    });
+
+    console.log(products);
+    console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    
+    products.sort(function(a, b) {
+        return b.price - a.price;
+    });
+
+    console.log(products);
