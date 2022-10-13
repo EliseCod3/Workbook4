@@ -7,13 +7,14 @@
     <title>Football</title>
 </head>
 <body>
-    <select name="teams" id="teamsList">
-        <option value="ATL">Atlanta Falcons</option>
-        <option value="BAL">Baltimore Ravens</option>
-        <option value="DEN">Denver Broncos</option>
-    </select>
-    <button>Choose Team</button>
-    <p id="message"></p>
     
+    <select name="teamsList" id="teamsList">
+        <option value="">Select Option</option>
+    </select>
+
+    <button onclick="displayTeams();">Display Team</button>
+    <p id="message"></p>
+
+    <script src="./main.js"></script>
 </body>
 </html>
