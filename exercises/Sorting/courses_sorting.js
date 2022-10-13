@@ -35,7 +35,7 @@ let courses = [
     Fee: "50.00",
     }
 ];
-
+//Compare and sort
 courses.sort(function (a, b) {
     if (a.Title < b.Title) {
         return -1;
