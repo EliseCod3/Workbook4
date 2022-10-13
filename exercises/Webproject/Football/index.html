@@ -7,12 +7,14 @@
     <title>Football</title>
 </head>
 <body>
+    <form action="" onsubmit="displayTeams(event);">
+        <select name="teamsList" id="teamsList" onchange="handleChange()">
+            <option value="">Select Option</option>
+        </select>
     
-    <select name="teamsList" id="teamsList">
-        <option value="">Select Option</option>
-    </select>
+        <button type="submit" >Display Team</button>
+    </form>
 
-    <button onclick="displayTeams();">Display Team</button>
     <p id="message"></p>
 
     <script src="./main.js"></script>

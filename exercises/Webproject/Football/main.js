@@ -28,16 +28,18 @@ let teams = [
         
     }
 
-    function displayTeams() {
+    function displayTeams(event) {
+        event.preventDefault();
         const teamsList = document.getElementById("teamsList");
        const teamCode = teamsList.value;
        for (let index = 0; index < teams.length; index++) {
         const team = teams[index];
         if (team.code == teamCode) {
-            console.log(`You selected ${team.name} (${team.code}) who play in ${team.plays}`);
+            const messageParagraph = document.getElementById("message");
+            messageParagraph.innerText = `You selected ${team.name} (${team.code}) who play in ${team.plays}`;
         }
        }
-       }
+    }
     
 
     function handleChange() {
