@@ -27,9 +27,9 @@ let academyMembers = [
     console.log("The Academy Member is:");
     function getMemberId(academyMembers, memId) {
         for (let index = 0; index < academyMembers.length; index++) {
-            const AcademyMember = academyMembers[index];
-            if (AcademyMember.memID == memId) {
-                return AcademyMember;
+            const academyMember = academyMembers[index];
+            if (academyMember.memID == memId) {
+                return academyMember;
             }
         }
     }
@@ -37,6 +37,17 @@ let academyMembers = [
     console.log(findId.name);
 
     // Who has have been in at least 3 films?
+    let famousActors = [];
 
+    for (let index = 0; index < academyMembers.length; index++) {
+        const academyMember = academyMembers[index];
+        if (academyMember.films.length = 3) {
+            famousActors.push(academyMember.name);
+        }
+    }
 
     // Who has a name that starts with "Bob"?
+    function getMemberName(academyMembers, Name) {
+        
+        
+    }
